@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class TestSelenium01 {
 @Test
     public void testCode(){
-    Assert.assertEquals("Pramod","pramod");
+    Assert.assertEquals("Pramod","Pramod");
 
 }
 @Test
