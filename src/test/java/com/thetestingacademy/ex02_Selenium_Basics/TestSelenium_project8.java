@@ -28,7 +28,7 @@ public class TestSelenium_project8 {
         driver.findElement(By.xpath("//input[@value='Selenium Webdriver']")).click();
         WebElement dropdown = driver.findElement(By.xpath("//select[@id='continents']"));
         Select select = new Select(dropdown);
-        select.selectByVisibleText("Europe");
+        select.selectByVisibleText("Europe");//can be used when class is select for dropdoen
 
 
 
