@@ -21,10 +21,11 @@ public class TestSelenium_project10 {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = driver.switchTo().alert();
-        //alert.accept();
-        alert.dismiss();
+        alert.accept();
+        //alert.dismiss();
         String result = driver.findElement(By.id("result")).getText();
-        Assert.assertEquals(result, "You clicked: Cancel");
+        //Assert.assertEquals(result, "You clicked: Cancel");
+        Assert.assertEquals(result, "You clicked: Ok");
 
         driver.close();
 
